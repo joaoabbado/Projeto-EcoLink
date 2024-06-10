@@ -29,7 +29,7 @@ body{
 /*---------------------------------------------*/
 .mainSection{
     height: 100vh; 
-    background: url('/imgHome/background.jpg') no-repeat center center;
+    background: url('background.jpg');
     background-size: cover;
     display: flex;
     color: white;
