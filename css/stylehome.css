@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
+
+.happy-monkey-regular {
+    font-family: "Happy Monkey", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    min-height: 100vh;
+    background-color: #F2EEB3;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+/*---------------------------------------------*/
+.mainSection{
+    height: 100vh; 
+    background: url('/imgHome/background.jpg') no-repeat center center;
+    background-size: cover;
+    display: flex;
+    color: white;
+    position: relative;
+    z-index: 1;
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 60%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+}
+/*---------------------------------------------*/
+.header{
+    font-family: Happy Monkey;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background:  #B6D96C;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff; 
+    z-index: 10;
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    font-weight: 10px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+    transition: all 0.3s;
+}
+.navbar a:hover{
+    color:#383725;
+    border-bottom: 1px solid #383725; 
+    display: inline-block;
+
+}
+/*---------------------------------------------*/
+h1{
+    font-size: 35px;
+    opacity: 1.0;
+    font-family: Happy Monkey;
+}
+h2{
+    font-size: 15px;
+    font-family: Happy Monkey;
+}
+.buttonMain{
+    font-family: Happy Monkey;
+    margin-top: 15px;
+    font-size: 25px;
+    width: 50%;
+    height: 100%;
+    background-color: #F2EEB3;
+    font-weight: bold;
+    box-shadow: none;
+    color: #383725;
+    border-color: #383725;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button{
+    font-family: Happy Monkey;
+    transition: all 0.3s;
+}
+button:hover{
+    transform: translateY(-5px);
+    background-color: #383725;
+    color: #F2EEB3;
+}
+/*---------------------------------------------*/
+.titleInfos{
+    margin-top: 10px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Happy Monkey;
+}
+/*---------------------------------------------*/
+.main{
+    position: relative;
+    z-index: 1; 
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding: 60px;
+    margin-top: 200px;
+    border-radius: 10px;
+    width: 600px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.mainInfo{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #B6D96C;
+    height: 100%;
+    margin: 2%;
+    border-radius: 10px;
+}
+.infoBox{
+    padding: 15px;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+.titleInfobox{
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: Happy Monkey;
+}
+.infoInfobox{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.buttonInfobox{
+    margin-top: 15px;
+    font-size: 25px;
+    width: 50%;
+    height: 100%;
+    background-color: #F2EEB3;
+    font-weight: bold;
+    box-shadow: none;
+    color: #383725;
+    border-color: #383725;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+img{
+    height: 70vh;  
+    width: 100vh;
+
+}
+/*---------------------------------------------*/
+.footerTitle{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+    font-family: Happy Monkey;
+}
+footer .contact{
+    background-color: #B6D96C;
+    color: black;
+    text-align: center;
+    left: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contact img{
+    width: 30px; 
+    height: 30px;
+}
+.footerText{
+    margin-bottom: 15px;
+    padding-right: 50px;
+    font-size: 25px;
+}
+/*---------------------------------------------*/
+.titleInfos::before {
+    content: "";
+    display: block;
+    height: 80px; 
+    margin-top: -60px; 
+    visibility: hidden;
+}

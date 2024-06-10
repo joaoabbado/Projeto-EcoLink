@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The return of them</title>
+    <link rel="stylesheet" href="css/stylehome.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Recicla+</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#infoSection">Destaques</a>
+            <a href="indexsocial.html">Posts</a>
+            <a href="#">Login</a>
+            <a href="#">Sign in</a>
+        </nav>
+    </header>
+
+    <section class="mainSection">
+    <div class="overlay"></div>
+    <div class="main">
+        <h1>Tornando o planeta mais verde juntos!</h1>
+        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem tempore labore tenetur aut? Distinctio voluptatem recusandae doloremque dolore, placeat odit.</h2>
+        <button class="buttonMain" onclick="scrollToSection('infoSection')">Saiba mais</button>
+    </div>
+    </section>
+    
+    <div class="titleInfos" id="infoSection">
+        Saiba mais
+    </div>
+    <section>
+        <div class="mainInfo">
+            <img src="imgHome/background2.jpg">
+            <div class="infoBox">
+                <div class="titleInfobox">
+                    Precisando de dicas sobre como ser mais sustentavél?
+                </div>
+                <div class="infoInfobox">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptas ab tenetur, sunt ea quasi nisi deleniti asperiores culpa a, dolorum, non veniam. Sint, voluptatibus ipsa quis minima officiis dolores?
+                </div>
+                <div class="infoInfobox">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptas ab tenetur, sunt ea quasi nisi deleniti asperiores culpa a, dolorum, non veniam. Sint, voluptatibus ipsa quis minima officiis dolores?
+                </div>
+                <div>
+                    <button class="buttonInfobox" onclick="irPagina()">Saiba mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="mainInfo">
+
+            <div class="infoBox">
+                <div class="titleInfobox">
+                    Precisando de dicas sobre como ser mais sustentavél?
+                </div>
+                <div class="infoInfobox">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptas ab tenetur, sunt ea quasi nisi deleniti asperiores culpa a, dolorum, non veniam. Sint, voluptatibus ipsa quis minima officiis dolores?
+                </div>
+                <div class="infoInfobox">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt voluptas ab tenetur, sunt ea quasi nisi deleniti asperiores culpa a, dolorum, non veniam. Sint, voluptatibus ipsa quis minima officiis dolores?
+                </div>
+                <div>
+                    <button class="buttonInfobox">Saiba mais</button>
+                </div>
+            </div>
+            <img src="imgHome/background2.jpg">
+        </div>
+    </section>
+    <footer>
+        <div class="footerTitle">Recicla+</div>
+        <div class="contact">
+            <img src="imgHome/cellphone.png">
+            <a class="footerText">(00)0000-0000</a>
+            <img src="imgHome/email.png">
+            <a class="footerText">email@email.com</a>
+            <img src="imgHome/location.png">
+            <a class="footerText">local, local, local, 000</a>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+        function irPagina() {
+            window.location.href = "indexsocial.html";
+        }
+    </script>
+</body>
+</html>
