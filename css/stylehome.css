@@ -141,6 +141,7 @@ button:hover{
     background-color: #8ea855;
     height: 100%;
     margin: 5%;
+    margin-top: 0;
     border-radius: 10px;
 }
 .infoBox{

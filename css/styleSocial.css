@@ -1,40 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
 
-.mainPage{
+body {
     font-family: 'Happy Monkey', Arial, sans-serif;
     margin: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
     color: #121212;
     background-color: #fbfbfb;
-
 }
 
-.nameWithLogo{
+.mainPage {
+    display: flex;
+    flex-direction: column; /* Mudança para coluna por padrão */
+    align-items: center;
+}
+
+.nameWithLogo {
     display: flex;
     align-items: center;
     margin-left: 20px;
 }
 
-.headerS{
+.headerS {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    height: 100%;
+    width: 100%;
     margin-left: 18px;
 }
 
-.infoSocial{
+.infoSocial {
     width: 100%;
     margin-bottom: 32px;
     margin-top: 16px;
     margin-left: 20px;
 }
 
-
-.imgSocial{
+.imgSocial {
     width: 45px;
     min-height: 45px;
     border-radius: 50%;
@@ -43,31 +44,30 @@
     margin-bottom: 8px;
 }
 
-.imgSocial:hover{
+.imgSocial:hover {
     transform: scale(1.5);
 }
 
-.asideRight{
+.asideRight,
+.asideLeft {
     position: fixed;
+    top: 0;
+    height: 100%;
+}
+
+.asideRight {
     right: 0;
-    top: 0;
     width: 25%;
-    height: 100%;
-    margin-left: 45px;
     margin-right: 20px;
 }
 
-.asideLeft{
-    position: fixed;
+.asideLeft {
     left: 0;
-    top: 0;
     width: 15%;
-    height: 100%;
     margin-left: 20px;
-    margin-right: 20px;
 }
 
-button{
+button {
     background: transparent;
     border: 0;
     color: inherit;
@@ -78,7 +78,7 @@ button{
     text-align: left;
 }
 
-.asideLeft button > span{
+.asideLeft button > span {
     display: inline-flex;
     align-items: center;
     gap: 10px;
@@ -89,7 +89,13 @@ button{
     font-weight: bold;
 }
 
-input{
+.linksNav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input {
     background-color: white;
     border: 0;
     border-radius: 5px;
@@ -99,30 +105,29 @@ input{
     margin-bottom: 17px;
 }
 
-.mainS{
+.mainS {
     background-color: #8ea855e3;
     margin-right: 380px;
     margin-left: 280px;
 }
 
-.imgPostUsuario{
+.imgPostUsuario {
     width: 45px;
     height: 45px;
     object-fit: cover;
     border-radius: 30px;
 }
 
-.postUser{
-    width: 650px;
-    height: 650px;
+.postUser {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
     object-fit: contain;
 }
 
-.btnInteracao{
+.btnInteracao {}
 
-}
-
-.actionBtnPost{
+.actionBtnPost {
     display: inline-block;
     align-items: center;
     font-weight: bold;
@@ -131,66 +136,90 @@ input{
     margin-right: 20px;
 }
 
-.actionBtnRight{
+.actionBtnRight {
     margin-left: 400px;
 }
 
-.imgActionBTN{
+.imgActionBTN {
     width: 30px;
     transition: 0.5s;
 }
 
-.imgActionBTN:hover{
+.imgActionBTN:hover {
     border-radius: 5px;
     transform: scale(1.1);
 }
 
-.legenda{
+.legenda {
     margin-bottom: 100px;
     font-weight: 400;
     font-size: 20px;
 }
 
-.nameAndHour{
+.nameAndHour {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-li{
+li {
     list-style: none;
 }
 
-
-
-
-.footerMain{
-    margin-left: 60px;
-    font-size: 10px;
-    margin-top: 50px;
+.footer {
+    padding: 20px 0;
+    background-color: #fafafa;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #dbdbdb;
 }
 
-.divFooter{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-right: 55px;
+.footer-links {
+    margin-bottom: 1px;
 }
 
-h3{
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-links ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-links ul li a:visited {
+    color: #8ea855e3;
+}
+
+.footer-copyright {
+    margin-top: 10px;
+}
+
+h3 {
     margin-top: 50px;
     font-weight: 500;
     font-size: 18px;
     margin-left: 40px;
 }
 
-.linkSugest{
+.linkSugest {
     display: flex;
     align-items: center;
-    
 }
 
-.imgSujst{
+.imgSujst {
     width: 45px;
     min-height: 45px;
     border-radius: 50%;
@@ -198,43 +227,40 @@ h3{
     margin-right: 5px;
 }
 
-.ulMain{
+.ulMain {
     margin-bottom: 15px;
     margin-top: 0;
 }
 
-.susjestaousuarios{
+.susjestaousuarios {
     display: flex;
     align-items: center;
     font-size: 15px;
     font-weight: bold;
     justify-content: space-between;
+    border-bottom: 1px solid #dbdbdb;
 }
 
-.seguir{
+.seguir {
     font-weight: 600;
     color: #8ea855e3;
     margin-left: 80px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #333;
 }
 
-.gifpolicia{
+.gifpolicia {
     margin-top: 20px;
     width: 180px;
     height: 180px;
 }
 
-
-/* ----- CSS CRIAR ----- */
-
-
-div.newPost{
+div.newPost {
     width: 80%;
-    height: 180px;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -247,31 +273,31 @@ div.newPost{
     padding: 40px;
 }
 
-div.newPost div.infoUser{
+div.newPost div.infoUser {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-div.newPost div.infoUser div.imgUser{
+div.newPost div.infoUser div.imgUser {
     width: 35px;
     height: 35px;
     border-radius: 50%;
 }
 
-div.newPost div.infoUser strong{
+div.newPost div.infoUser strong {
     font-size: 16px;
     color: #8ea855e3;
     margin-left: 10px;
 }
 
-div.newPost form.formPost{
+div.newPost form.formPost {
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-div.newPost form.formPost textarea{
+div.newPost form.formPost textarea {
     background-color: #fbfbfb;
     margin: 10px 0;
     padding: 15px;
@@ -284,13 +310,13 @@ div.newPost form.formPost textarea{
     height: 70px;
 }
 
-div.newPost form.formPost div.iconsAndButton{
+div.newPost form.formPost div.iconsAndButton {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-div.newPost form.formPost div.iconsAndButton div.icons{
+div.newPost form.formPost div.iconsAndButton div.icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -298,11 +324,11 @@ div.newPost form.formPost div.iconsAndButton div.icons{
     transition: 0.6s;
 }
 
-.btnFileForm:hover{
+.btnFileForm:hover {
     transform: scale(1.2);
 }
 
-div.newPost form.formPost div.iconsAndButton div.icons button{
+div.newPost form.formPost div.iconsAndButton div.icons button {
     outline: none;
     background-color: #8ea855e3;
     border: 0;
@@ -317,11 +343,11 @@ div.newPost form.formPost div.iconsAndButton div.icons button{
     transition: 0.6s;
 }
 
-button.btnSubmit:hover{
+button.btnSubmit:hover {
     transform: scale(1.1);
 }
 
-div.newPost form.formPost div.iconsAndButton button.btnSubmit{
+div.newPost form.formPost div.iconsAndButton button.btnSubmit {
     background-color: #8ea855e3;
     width: 120px;
     height: 35px;
@@ -335,29 +361,38 @@ div.newPost form.formPost div.iconsAndButton button.btnSubmit{
     transition: 0.2s;
 }
 
-div.newPost form.formPost div.iconsAndButton button.btnSubmit:hover{
+div.newPost form.formPost div.iconsAndButton button.btnSubmit:hover {
     background-color: #8ea855e3;
-
 }
 
-.imgUser{
+.imgUser {
     width: 45px;
     min-height: 45px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-/*
-<section class="ferramentas">
-            <ul>
-                <div class="filter">
-                    <li><a href="">Filtrar por:</a></li>
-                </div>
-                <li><a href="">Especialistas</a></li>
-                <li><a href=""></a>Usuários</li>
-                <li><a href=""></a>Meus Posts</li>
-            </ul>
-        </section>
-*/
+/* Responsividade */
+@media (max-width: 1200px) {
+    .asideRight {
+        width: 30%;
+    }
+    .asideLeft {
+        width: 20%;
+    }
+}
 
+@media (max-width: 992px) {
+    .asideRight, .asideLeft {
+        width: 35%;
+    }
+    .mainS {
+        margin-right: 300px;
+        margin-left: 200px;
+    }
+}
 
+@media (max-width: 768px) {
+    .asideRight, .asideLeft {
+        display: none;
+   
