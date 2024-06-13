@@ -107,8 +107,8 @@ input {
 
 .mainS {
     background-color: #8ea855e3;
-    margin-right: 380px;
-    margin-left: 280px;
+    margin-right: 20vw;
+    margin-left: 10vw;
 }
 
 .imgPostUsuario {
@@ -118,14 +118,22 @@ input {
     border-radius: 30px;
 }
 
-.postUser {
+.postContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     max-width: 650px;
-    height: auto;
-    object-fit: contain;
+    height: 650px;
+    overflow: hidden;
 }
 
-.btnInteracao {}
+.postUser {
+    width: 100%;
+    max-width: 700px;
+    height: 650px;
+    object-fit: contain;
+}
 
 .actionBtnPost {
     display: inline-block;
@@ -134,10 +142,6 @@ input {
     font-size: 20px;
     gap: 8px;
     margin-right: 20px;
-}
-
-.actionBtnRight {
-    margin-left: 400px;
 }
 
 .imgActionBTN {
@@ -395,4 +399,5 @@ div.newPost form.formPost div.iconsAndButton button.btnSubmit:hover {
 @media (max-width: 768px) {
     .asideRight, .asideLeft {
         display: none;
-   
+    }
+}
