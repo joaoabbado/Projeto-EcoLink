@@ -113,9 +113,14 @@ button:hover{
 .titleInfos{
     margin-top: 10px;
     font-size: 50px;
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-weight: bold;
-    font-family: Happy Monkey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titleInfosText{
+    border-bottom: 3px solid #8ea855; 
 }
 /*---------------------------------------------*/
 .main{
@@ -141,7 +146,7 @@ button:hover{
     background-color: #8ea855;
     height: 100%;
     margin: 5%;
-    margin-top: 0;
+    margin-top: 5%;
     border-radius: 10px;
 }
 .infoBox{
@@ -212,4 +217,78 @@ footer .contact{
     height: 80px; 
     margin-top: -60px; 
     visibility: hidden;
+}
+/*---------------------------------------------*/
+.highlight{
+    display: flex;
+}
+.carousel {
+    display: flex;
+    position: relative;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    width: 80%;
+    max-width: 800px;
+    height: 80%;
+    max-height: 640px;
+    overflow: hidden;
+    border: 2px solid #8ea855;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.carousel-images img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+.carouselInfoTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: #8ea855;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+    padding: 5px;
+    width: 300px;
+    max-width: 300px;
+    font-size: 40px;
+    font-family: Happy Monkey;
+    border-radius: 5px;
+}
+.carouselInfo{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.carouselInfoImg{
+    width: 100%;
+    max-width: 300px;
+    width: 100%;
+    max-height: 300px;
 }
