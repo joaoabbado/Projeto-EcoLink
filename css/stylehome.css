@@ -221,11 +221,11 @@ footer .contact{
 /*---------------------------------------------*/
 .highlight{
     display: flex;
+    justify-content: center;
 }
 .carousel {
     display: flex;
     position: relative;
-    margin-left: 5%;
     margin-bottom: 5%;
     margin-top: 2%;
     width: 80%;
