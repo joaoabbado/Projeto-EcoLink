@@ -16,7 +16,7 @@ html{
 }
 body{
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #fbfbfb;
 }
 .overlay {
     position: absolute;
@@ -117,7 +117,10 @@ button:hover{
     justify-content: center;
     text-align: center;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Happy Monkey", system-ui;
+    background-color: #8ea855;
+    color: #fff;
+    padding-top: 10px;
 }
 .titleInfosText{
     border-bottom: 3px solid #8ea855; 
@@ -145,9 +148,9 @@ button:hover{
     align-items: center;
     background-color: #8ea855;
     height: 100%;
-    margin: 5%;
+    margin: 10%;
     margin-top: 5%;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 .infoBox{
     padding: 15px;
@@ -155,6 +158,10 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+.imgInfoBox{
+    border-radius: 50px;
 }
 .titleInfobox{
     font-weight: bold;
@@ -222,6 +229,9 @@ footer .contact{
 .highlight{
     display: flex;
     justify-content: center;
+    background-color: #8ea855;
+    margin-bottom: 70px;
+
 }
 .carousel {
     display: flex;
@@ -233,7 +243,13 @@ footer .contact{
     height: 80%;
     max-height: 640px;
     overflow: hidden;
-    border: 2px solid #8ea855;
+    border-radius: 50px;
+}
+
+.imgCarrousel{
+    object-fit: cover;
+    height: 480px;
+    width: 200px;
 }
 
 .carousel-images {
@@ -271,7 +287,7 @@ footer .contact{
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
-    background-color: #8ea855;
+    background-color: #63763a;
     margin-left: 5%;
     margin-bottom: 5%;
     margin-top: 2%;
@@ -280,7 +296,7 @@ footer .contact{
     max-width: 300px;
     font-size: 40px;
     font-family: Happy Monkey;
-    border-radius: 5px;
+    border-radius: 50px;
 }
 .carouselInfo{
     font-size: 20px;
@@ -291,4 +307,37 @@ footer .contact{
     max-width: 300px;
     width: 100%;
     max-height: 300px;
+}
+
+.infosBottom {
+    display: flex;
+    justify-content: center;
+    gap: 180px;
+    
+}
+
+.imgInfosBottom {
+    max-width: 280px;
+    max-height: 200px;
+    background-color: #F2EEB3;
+    object-fit: contain;
+    border-radius: 15px;
+}
+
+.infosBottom p {
+    max-width: 200px;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Happy Monkey", system-ui;
+}
+
+.infosBottom div {
+    background-color: #8ea855;
+    height: 360px;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 15px;
 }

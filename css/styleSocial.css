@@ -10,7 +10,7 @@ body {
 
 .mainPage {
     display: flex;
-    flex-direction: column; /* Mudança para coluna por padrão */
+    flex-direction: column;
     align-items: center;
 }
 
@@ -107,8 +107,9 @@ input {
 
 .mainS {
     background-color: #8ea855e3;
-    margin-right: 20vw;
-    margin-left: 10vw;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding: 20px;
 }
 
 .imgPostUsuario {
@@ -118,21 +119,11 @@ input {
     border-radius: 30px;
 }
 
-.postContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 650px;
-    height: 650px;
-    overflow: hidden;
-}
-
 .postUser {
-    width: 100%;
-    max-width: 700px;
+    width: 93%;
+    max-width: 600px;
     height: 650px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .actionBtnPost {
@@ -262,12 +253,15 @@ a {
     height: 180px;
 }
 
-div.newPost {
-    width: 80%;
-    height: auto;
+div.newPost div.infoUser {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
+}   
+
+
+div.newPost {
+    width: 79%;
+    height: auto;
     background-color: #faf6f6;
     border-radius: 10px;
     margin-left: 30px;
@@ -277,11 +271,6 @@ div.newPost {
     padding: 40px;
 }
 
-div.newPost div.infoUser {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 div.newPost div.infoUser div.imgUser {
     width: 35px;
