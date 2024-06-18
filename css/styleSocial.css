@@ -10,7 +10,7 @@ body {
 
 .mainPage {
     display: flex;
-    flex-direction: column; /* Mudança para coluna por padrão */
+    flex-direction: column;
     align-items: center;
 }
 
