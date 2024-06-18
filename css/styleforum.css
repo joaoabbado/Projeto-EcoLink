@@ -1,8 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Happy+Monkey&display=swap');
-
-
-
 
 body {
     font-family: 'Happy Monkey', Arial, sans-serif;
@@ -14,7 +10,7 @@ body {
 
 .mainPage {
     display: flex;
-    flex-direction: column; /* Mudança para coluna por padrão */
+    flex-direction: column;
     align-items: center;
 }
 
@@ -111,8 +107,9 @@ input {
 
 .mainS {
     background-color: #8ea855e3;
-    margin-right: 20vw;
-    margin-left: 10vw;
+    margin-left: 10%;
+    margin-right: 20%;
+    padding: 20px;
 }
 
 .imgPostUsuario {
@@ -122,21 +119,11 @@ input {
     border-radius: 30px;
 }
 
-.postContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 650px;
-    height: 650px;
-    overflow: hidden;
-}
-
 .postUser {
-    width: 100%;
-    max-width: 700px;
+    width: 93%;
+    max-width: 600px;
     height: 650px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .actionBtnPost {
@@ -168,7 +155,6 @@ input {
     display: flex;
     align-items: center;
     gap: 10px;
-    margin-bottom: -50px;
 }
 
 li {
@@ -267,12 +253,15 @@ a {
     height: 180px;
 }
 
-div.newPost {
-    width: 80%;
-    height: auto;
+div.newPost div.infoUser {
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
+}   
+
+
+div.newPost {
+    width: 79%;
+    height: auto;
     background-color: #faf6f6;
     border-radius: 10px;
     margin-left: 30px;
@@ -282,11 +271,6 @@ div.newPost {
     padding: 40px;
 }
 
-div.newPost div.infoUser {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 div.newPost div.infoUser div.imgUser {
     width: 35px;
@@ -355,9 +339,6 @@ div.newPost form.formPost div.iconsAndButton div.icons button {
 button.btnSubmit:hover {
     transform: scale(1.1);
 }
-.btnIntercao{
-    margin-top:-70px;
-}
 
 div.newPost form.formPost div.iconsAndButton button.btnSubmit {
     background-color: #8ea855e3;
@@ -382,7 +363,6 @@ div.newPost form.formPost div.iconsAndButton button.btnSubmit:hover {
     min-height: 45px;
     border-radius: 50%;
     object-fit: cover;
-    
 }
 
 /* Responsividade */
@@ -430,8 +410,6 @@ main {
 
 .publicacao, .secao-comentarios {
     font-family: Arial, Helvetica, sans-serif;
-    border-color: #dbdbdb;
-    border-style: solid;
     border-width: 1px;
     border-radius: 8px;
     margin-top: -80px;
@@ -447,6 +425,7 @@ main {
     border: 1px solid #ddd;
     border-radius: 4px;
     margin-bottom: 15px;
+    background-color: #dcdcdc;
 }
 
 .comentario {
@@ -456,7 +435,7 @@ main {
 }
 
 .conteudo-comentario {
-    background-color: #f0f2f5;
+    background-color: #dcdcdc;
     border-radius: 8px;
     padding: 10px;
     margin-left: 10px;
@@ -466,6 +445,13 @@ main {
 .nome-comentario {
     font-weight: bold;
     display: block;
+}
+
+.foto-perfil{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 
