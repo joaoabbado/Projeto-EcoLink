@@ -400,12 +400,6 @@ div.newPost form.formPost div.iconsAndButton button.btnSubmit:hover {
 
 
 
-main {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 
 .publicacao, .secao-comentarios {
