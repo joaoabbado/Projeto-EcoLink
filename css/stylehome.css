@@ -110,7 +110,11 @@ button:hover{
     color: #F2EEB3;
 }
 /*---------------------------------------------*/
-.titleInfos{
+.content {
+    margin-top: -3%;
+}
+
+.titleInfos {
     margin-top: 10px;
     font-size: 50px;
     display: flex;
@@ -119,11 +123,29 @@ button:hover{
     font-weight: bold;
     font-family: "Happy Monkey", system-ui;
     background-color: #8ea855;
-    color: #fff;
+    color: #333;
     padding-top: 10px;
+    position: relative;
 }
-.titleInfosText{
+
+.titleInfosText::before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top: -100px;
+    visibility: hidden;
+}
+
+.titleInfosText {
     border-bottom: 3px solid #8ea855; 
+}
+
+.saibaMais{
+    text-align: center;
+    font-weight: bold;
+    font-family: "Happy Monkey", system-ui;
+    font-size: 50px;
+    color: #333;
 }
 /*---------------------------------------------*/
 .main{
@@ -313,7 +335,15 @@ footer .contact{
     display: flex;
     justify-content: center;
     gap: 180px;
-    
+    margin-bottom: 5%;
+}
+
+.dicasHover{
+    transition: 1s;
+}
+
+.dicasHover:hover{
+    transform: scale(1.1);
 }
 
 .imgInfosBottom {
@@ -324,11 +354,31 @@ footer .contact{
     border-radius: 15px;
 }
 
-.infosBottom p {
+.infosBottom a div p{
     max-width: 200px;
     text-align: center;
     font-weight: bold;
     font-family: "Happy Monkey", system-ui;
+}
+
+.infosBottom a{
+    text-decoration: none;
+    color: #333;
+}
+
+.pDivs1{
+    font-size: 25px;
+    margin-top: 15%;
+}
+
+.pDivs2{
+    margin-bottom: 12%;
+    font-size: 20px;
+}
+
+.pDivs3{
+    margin-top: 2%;
+    font-size: 18px;
 }
 
 .infosBottom div {
