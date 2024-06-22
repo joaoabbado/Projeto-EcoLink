@@ -13,7 +13,9 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
+#barra{
+    max-width: 150px;
+}
 .nameWithLogo {
     display: flex;
     align-items: center;

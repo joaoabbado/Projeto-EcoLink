@@ -14,6 +14,7 @@ body{
 }
 
 .header{
+    font-family: Happy Monkey;
     position: fixed;
     top: 0;
     left: 0;
@@ -34,18 +35,38 @@ body{
 }
 .navbar a{
     position: relative;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bolder;
     color: #fff;
     text-decoration: none;
     margin-left: 40px;
+    margin-right: 0;
     transition: all 0.3s;
+    border-bottom: 1px solid #8ea855e3; 
 }
 .navbar a:hover{
     color:#383725;
-    border-bottom: 1px solid #383725; 
-    display: inline-block;
+    border-color: #383725; 
 
+}
+#login{
+    background-color:#F2EEB3;
+    color: #383725;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+}
+#login:hover{
+    border-color: #8ea855;
+    background-color: #383725;
+    color: #F2EEB3;
+}
+#userPhoto {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .mainSection{

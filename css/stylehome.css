@@ -7,6 +7,7 @@
 }
 html{
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 *{
     margin: 0;
@@ -61,18 +62,38 @@ body{
 }
 .navbar a{
     position: relative;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bolder;
     color: #fff;
     text-decoration: none;
     margin-left: 40px;
+    margin-right: 0;
     transition: all 0.3s;
+    border-bottom: 1px solid #8ea855e3; 
 }
 .navbar a:hover{
     color:#383725;
-    border-bottom: 1px solid #383725; 
-    display: inline-block;
+    border-color: #383725; 
 
+}
+#login{
+    background-color:#F2EEB3;
+    color: #383725;
+    padding: 15px 20px 15px 20px;
+    border-radius: 10px;
+}
+#login:hover{
+    border-color: #8ea855;
+    background-color: #383725;
+    color: #F2EEB3;
+}
+#userPhoto {
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
 }
 /*---------------------------------------------*/
 h1{
@@ -126,6 +147,7 @@ button:hover{
     color: #333;
     padding-top: 10px;
     position: relative;
+    
 }
 
 .titleInfosText::before {
@@ -146,6 +168,8 @@ button:hover{
     font-family: "Happy Monkey", system-ui;
     font-size: 50px;
     color: #333;
+    margin-bottom: 2%;
+    
 }
 /*---------------------------------------------*/
 .main{
@@ -155,7 +179,7 @@ button:hover{
     border: 0;
     padding: 0;
     padding: 60px;
-    margin-top: 200px;
+    margin-top: 150px;
     border-radius: 10px;
     width: 600px;
     height: 300px;
@@ -171,7 +195,8 @@ button:hover{
     background-color: #8ea855;
     height: 100%;
     margin: 10%;
-    margin-top: 5%;
+    margin-top: 0;
+    margin-bottom: 5%;
     border-radius: 50px;
 }
 .infoBox{
@@ -180,8 +205,8 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    text-align: center;
 }
-
 .imgInfoBox{
     border-radius: 50px;
 }
@@ -223,12 +248,16 @@ img{
     font-family: Happy Monkey;
 }
 footer .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #8ea855;
     color: black;
     text-align: center;
     left: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 .contact img{
     width: 30px; 
@@ -237,7 +266,7 @@ footer .contact{
 .footerText{
     margin-bottom: 15px;
     padding-right: 50px;
-    font-size: 25px;
+    font-size: 20px;
 }
 /*---------------------------------------------*/
 .titleInfos::before {

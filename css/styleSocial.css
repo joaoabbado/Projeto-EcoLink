@@ -364,6 +364,9 @@ div.newPost form.formPost div.iconsAndButton button.btnSubmit:hover {
     border-radius: 50%;
     object-fit: cover;
 }
+#barra{
+    max-width: 150px;
+}
 
 /* Responsividade */
 @media (max-width: 1200px) {
