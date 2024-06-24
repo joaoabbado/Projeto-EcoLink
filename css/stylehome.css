@@ -54,6 +54,7 @@ body{
     border-bottom: 2px solid #fff; 
     z-index: 10;
 }
+
 .logo{
     font-size: 32px;
     color: #fff;
@@ -258,6 +259,7 @@ footer .contact{
     left: 0;
     padding-top: 30px;
     padding-bottom: 30px;
+    cursor: pointer;
 }
 .contact img{
     width: 30px; 

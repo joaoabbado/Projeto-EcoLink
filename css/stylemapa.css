@@ -2,7 +2,6 @@
 
 .happy-monkey-regular {
     font-family: "Happy Monkey", system-ui;
-    font-weight: 400;
     font-style: normal;
 }
 html{
@@ -268,3 +267,37 @@ a{
     margin-bottom: 10px;
 }
 /*-------------------------------------------*/
+
+.footerTitle{
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+}
+footer .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8ea855;
+    color: black;
+    text-align: center;
+    left: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 100;
+    cursor: pointer;
+}
+.contact img{
+    width: 30px; 
+    height: 30px;
+}
+.footerText{
+    margin-bottom: 15px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.contact a{
+    font-weight: 400;
+}
